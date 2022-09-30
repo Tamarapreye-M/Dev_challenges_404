@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@500;700&family=Space+Mono:wght@400;700&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	width: 100%;
+    min-height: 100vh;
+	padding: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	/* justify-content: center; */
+	gap: 3rem;
+}
+header h3 {
+	font-family: "Inconsolata", monospace;
+	font-weight: 700;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	letter-spacing: -0.08em;
+    color: #333333;
+}
+main {
+	display: flex;
+	flex-direction: column;
+    /* height: 70%; */
+	row-gap: 1rem;
+}
+@media screen and (min-width: 768px) {
+    body{
+        justify-content: space-between;
+        padding: 2.5rem;
+    
+    }
+    footer{
+        margin-top: 0 !important; 
+    }
+
+}
+
+.img-sec{
+    display: flex;
+    place-content: center;
+    width: 100%;
+
+}
+img {
+	display: block;
+	width: min(100%, 450px);
+
+}
+
+.text-box {
+	display: flex;
+	flex-direction: column;
+	row-gap: 2rem;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.text-box h2 {
+	font-family: "Space Mono", monospace;
+	font-weight: 700;
+	font-size: 2.7rem;
+	letter-spacing: -0.035em;
+    color: #333333;
+}
+.text-box p {
+	font-size: 1.1rem;
+	font-family: "Space Mono", monospace;
+	font-weight: 400;
+	line-height: 1.5rem;
+	color: #4f4f4f;
+	letter-spacing: -0.035em;
+    margin-bottom: 1rem;
+}
+.text-box button {
+	font-family: "Space Mono";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 0.9rem;
+	line-height: 1.3rem;
+	letter-spacing: -0.035em;
+	text-transform: uppercase;
+	color: #ffffff;
+    background: #333333;
+    width: 13.5rem;
+    height: 4.25rem;
+    border: none;
+}
+footer{
+    margin-top: auto;
+}
+footer p {
+	font-family: "Montserrat", sans-serif;
+    color: #BDBDBD;
+    font-size: 0.9rem;
+    text-align: center;
+    
+    
+}
+@media screen and (min-width: 996px) {
+    body{
+        padding: 2.5rem 5rem;
+    }
+    main{
+        flex-direction: row;
+        justify-content: center;
+        /* flex-basis: 40%; */
+        gap: 2rem;
+    }
+    header{
+        padding-left: 3rem;
+    }
+    img{
+        width: min(100%, 539px) ;
+    }
+    .img-sec{
+        width: 50% ;
+    }
+    .text-box{
+        width: 50%;
+        justify-content: space-between;
+    }
+    .text-box h2{
+        font-size: 4rem;
+        width: 90%;
+    }
+    .text-box p {
+        width: 65%;
+        font-size: 1.5rem;
+        line-height: 2.3rem ;
+        letter-spacing: -0.035em;
+
+    }
+    footer p {
+        font-weight: 500;
+    }
+}
